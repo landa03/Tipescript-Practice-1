@@ -89,4 +89,26 @@
 // let quantity: Quantity = 100;
 // type Metric = 'cm' | 'inch';
 
-// Nullable Types
+// // Nullable Types
+// function greet(mesage: string | null | undefined) {
+//     if (mesage){
+//         console.log(mesage.toUpperCase());
+//     }else{
+//         console.log('Hola!');
+//     }
+// }
+// greet(undefined); // tengo que manejar la posibilidad de que se entregue un valor nulo a  mis funciones.
+
+// // Optional Chaining
+// type Customer = {
+//     birthday: Date
+// };
+// function getCustomer(id: number): Customer | null | undefined{
+//     return id === 0 ? null : { birthday: new Date() };
+//     //     if       ?=then  :=else
+// }
+// let customer = getCustomer(0);
+// console.log(customer?.birthday?.getFullYear()); // el ? antes de . hace que revise si no es null o undefined
+// //Opcional call
+// let log: any = null;
+// log?.('a');
